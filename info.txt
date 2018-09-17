@@ -1,0 +1,24 @@
+BASIC OPERATIONS:
+	
+for loop
+example:-
+
+ for i in atomic elements:
+  print "key is ", i "Value is",atomicelements[i]
+
+taking input from user
+
+key=raw_input("Enter the atomic symbol: \t")
+value=raw_input("Enter the atomic mass: \t")
+atomicelements[key] = value
+
+how to write function:-
+Def functionname(): #says function is starting , no brackets here
+ #line 2 starts from a space as form of indentation
+
+python classes
+
+
+INDENTATION
+
+
