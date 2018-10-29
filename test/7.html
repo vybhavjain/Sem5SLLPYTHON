@@ -1,0 +1,83 @@
+<!DOCTYPE html>
+<html>
+<title>MARKS</title>
+<h1 style="color:RED ;font-size:80px; font-family:veranda; "><b><u>MARKSCARD</u></b></h1>
+<table >
+<tr>
+ <th>Sl. No.</th>
+ <th>SUBJECT CODE</th>
+ <th>SUBJECT</th>
+ <th>MARKS</th>
+ <th>GRADE</th>
+</tr>
+ <tr>
+    <td>1</td>
+    <td>IS31</td>
+    <td>MATHEMATICS-3</td>    
+<td><input type="number" id="m1" min=0 max=100>  
+  <td id="u"></td> 
+  </tr>
+<tr>
+    <td>2</td>
+    <td>IS32</td>
+    <td>DATA STRUCTURES</td>
+    <td><input type="number" id="m2" min=0 max=100>  
+    <td id="v"></td>
+    </tr>
+<tr>
+    <td>3</td>
+    <td>IS34</td>
+    <td>OOPS WITH C++</td>
+    <td><input type="number" id="m3" min=0 max=100>  
+    <td id="w"></td>
+    </tr>
+<tr>
+    <td>4</td>
+    <td>IS35</td>
+    <td>SOFTWARE ENGINEERING</td>
+    <td><input type="number" id="m4" min=0 max=100>  
+   <td id="x"></td>
+    </tr>
+
+</table>
+<br><br>
+<button onclick=add() style="font-size:20px">SUBMIT</button><br>
+<p id="sum" ></p>
+
+<br><br><hr><hr>
+
+<script>
+function grade(x) { 
+
+if( x<=50 ) 
+ return "F"
+if(x>90 && x<=100 )
+ return "A"
+if(x>80 && x<=90 )
+ return "B"
+if(x>70 && x<=80 )
+ return "C"
+if(x>60 && x<=70 )
+ return "D"
+if(x>50 && x<=60 )
+ return "E"
+}
+
+
+function add() { 
+var a,b,c,d;
+
+a=parseInt(document.getElementById("m1").value);
+b=parseInt(document.getElementById("m2").value);
+c=parseInt(document.getElementById("m3").value);
+d=parseInt(document.getElementById("m4").value);
+
+document.getElementById("sum").innerHTML=" AVERAGE: " + ((a+b+c+d)/4);
+document.getElementById("u").innerHTML= grade(a);
+document.getElementById("v").innerHTML= grade(b);
+document.getElementById("w").innerHTML= grade(c);
+document.getElementById("x").innerHTML= grade(d);
+}
+</script>
+</body>
+</html>
