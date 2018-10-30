@@ -1,0 +1,75 @@
+<!DOCTYPE html>
+<html>
+<title>CARS</title>
+
+<body>
+
+<p id="c" style=" color:RED; font-size: 80px"> CARS</p>
+<hr>
+<img src="c1.jpeg" width="400px" height="400px" title="porsche" alt="IMAGE OF PORSCHE" onmouseover="func1()" >
+<img src="c2.jpeg" width="300px" height="300px" title="BMW" alt="IMAGE OF BMW" onmouseover="func2()" >
+<br><hr><hr><br>
+
+<p style="font-size:20px" >MODEL:   </p>
+<p style="font-size:20px" id="m"></p>
+<hr>
+
+<p style="font-size:20px" >NAME:   </p>
+<p style="font-size:20px" id="n"></p>
+<hr>
+
+<p style="font-size:20px" >PRICE:   </p>
+<p style="font-size:20px" id="p"></p>
+<hr>
+
+<p style="font-size:20px" >YEAR:   </p>
+<p style="font-size:20px" id="y"></p>
+<hr>
+
+<script>
+myobj = [ 
+{ 
+ "model" : "2018 MODEL",
+  "nam" : "PORSCHE PANAMERA",
+  "price" : "Rs 1.2 Crores",
+  "year":"2018",
+} ,
+ { 
+ "model" : "2018 MODEL",
+  "nam" : "BMW 7 SERIES",
+  "price" : "Rs 1.2 Crores",
+  "year":"2017",
+} 
+]
+
+function func1() {
+var a=" ",b=" ",c=" ",d=" ";
+a=myobj[0].model;
+b=myobj[0].nam;
+c=myobj[0].price;
+d=myobj[0].year;
+document.getElementById("c").innerHTML= "PORCHE"
+document.getElementById("m").innerHTML= a
+document.getElementById("n").innerHTML= b
+document.getElementById("p").innerHTML= c
+document.getElementById("y").innerHTML= d
+
+}
+
+function func2() {
+var a=" ",b=" ",c=" ",d=" ";
+a=myobj[1].model;
+b=myobj[1].nam;
+c=myobj[1].price;
+d=myobj[1].year;
+document.getElementById("c").innerHTML= "BMW"
+document.getElementById("m").innerHTML= a
+document.getElementById("n").innerHTML= b
+document.getElementById("p").innerHTML= c
+document.getElementById("y").innerHTML= d
+
+}
+
+</script>
+</body>
+</html>
