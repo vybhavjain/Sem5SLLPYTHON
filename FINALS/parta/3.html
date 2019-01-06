@@ -1,0 +1,17 @@
+<!DOCTYPE html>
+<html>
+<body>
+enter a sentence <input type="text" name="s1" id ="s1"></br>
+<input type="button" value="get longest word" onclick="longe()"></br>
+<p id="res"></p>
+<script>
+function longe()
+{
+var val=document.getElementById("s1").value.split(' ');
+var maxi=val[0];
+val.forEach(function(v){if(v.length>maxi.length) maxi=v;});
+document.getElementById("res").innerHTML=' length is: '+maxi.length;
+}
+</script>
+</body>
+</html>
