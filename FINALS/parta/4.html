@@ -1,0 +1,37 @@
+<!DOCTYPE html>
+<html>
+<body>
+<form method="post">
+enter a number:<input type='num' id='num'></br>
+<button type="button" onclick="double()">twice</button>
+<button type="button" onclick="square()">square</button>
+<p result is: id="res"></p>
+</form>
+<script>
+function double()
+{
+var x;
+x=document.getElementById("num").value;
+if(x=="")
+{
+	alert("can't be empty")
+}
+else{
+	document.getElementById("res").innerHTML=2*x;
+}}
+
+function square()
+{
+var x;
+x=document.getElementById("num").value;
+if(x=="")
+{
+	alert("can't be empty")
+}
+else{
+	document.getElementById("res").innerHTML=x*x;
+}
+}
+</script>
+</body>
+</html>
