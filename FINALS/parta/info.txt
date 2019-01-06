@@ -1,0 +1,4 @@
+For all questions of the type : execute js seperately 
+remove the content of the script tag and place it in a new file, name as filename.js and add below to html file:
+
+<script type="text/javascript" src="filename.js"></script>
