@@ -1,0 +1,49 @@
+<!DOCTYPE html>
+<html>
+<body>
+
+Hospital name:<p id="hname" ></p><br><br>
+Hospital location:<p id="hlocation" ></p>
+<h2 id="HoverText" onmouseover="myHoverFunction()"> Patient Details </h2>
+<br>
+<table id="table1" border=1 hidden>
+<th> Name</th><th>Aadhaar</th><th>Lab_Tests</th>
+<tr><td id="name1"></td><td id = "id1"></td><td id = "test1"></tr>
+<tr><td id="name2"></td><td id = "id2"></td><td id = "test2"></tr>
+<tr><td id="name3"></td><td id = "id3"></td><td id = "test3"></tr>
+</table>
+<script>
+var obj={
+"name":"sparsh hospital",
+"location":"bangalore"};
+var x,y;
+x=obj.name;
+y=obj.location;
+document.getElementById("hname").innerHTML=x;
+document.getElementById("hlocation").innerHTML=y;
+function myHoverFunction()
+{
+  document.getElementById("HoverText").style.color = "red";
+  document.getElementById("table1").removeAttribute('hidden');
+    var p = [
+        {"name":"n1", "id": "1", "tests":["sugar", "haemo"]},
+        {"name":"n2", "id": "2", "tests":["blood", "sugar", "haemo"]},
+        {"name":"n3", "id": "3", "tests":["urine", "sugar"] }
+    ];
+    var obj=p[0];
+	document.getElementById('name1').innerHTML=obj.name;
+	document.getElementById('id1').innerHTML=obj.id;
+	document.getElementById('test1').innerHTML=obj.tests;
+	var obj=p[1];
+	document.getElementById('name2').innerHTML=obj.name;
+	document.getElementById('id2').innerHTML=obj.id;
+	document.getElementById('test2').innerHTML=obj.tests;
+	var obj=p[2];
+	document.getElementById('name3').innerHTML=obj.name;
+	document.getElementById('id3').innerHTML=obj.id;
+	document.getElementById('test3').innerHTML=obj.tests;
+
+}
+</script>
+</body>
+</html>
