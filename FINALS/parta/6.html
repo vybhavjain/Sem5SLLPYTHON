@@ -1,0 +1,43 @@
+<!DOCTYPE html>
+<html>
+<body>
+	<p>enter numbers</p>
+	number1<input type="number" name="num1" id="num1"><br>
+	number2<input type="number" name="num2" id="num2"><br>
+	<input type="radio" name="one" id="r1"> ADD 
+	<input type="radio" name="one" id="r2"> SUBTRACT>
+	<input type="radio" name="one" id="r3"> MULTIPLY 
+	<input type="radio" name="one" id="r4"> DIVIDE <br>
+	<button type="button"onclick="calc()"> submit</button><br>
+	<p id="space"></p>
+	<script>
+		function calc()
+	{	
+		var x = parseInt(document.getElementById("num1").value);
+		var y = parseInt(document.getElementById("num2").value);
+		if(document.getElementById("r1").checked)
+		{
+			document.getElementById("space").innerHTML = x+y; 
+		}
+		if(document.getElementById("r2").checked)
+		{
+			document.getElementById("space").innerHTML = x-y; 
+		}
+		if(document.getElementById("r3").checked)
+		{
+			document.getElementById("space").innerHTML = x*y; 
+		}
+		if(document.getElementById("r4").checked)
+		if(y==0)
+		{
+			document.getElementById("res").innerHTML='divide by zero error';
+		}
+		else
+		{
+			document.getElementById("res").innerHTML=x/y;
+		}
+	}
+	</script>
+	
+</body>
+</html>
