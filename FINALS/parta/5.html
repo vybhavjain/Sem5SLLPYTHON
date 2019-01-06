@@ -1,0 +1,33 @@
+<!DOCTYPE html>
+<html>
+<body>
+<h1> authors and their works</h1>
+<table id="authortable" border=1 >
+<th>NAME</th><th>STORYTITLE</th><th>NATIVECOUNTRY</th><th>PUBLICATIONYEAR</th>
+<tr><td id="name1"></td><td id="storytitle1"></td><td id="nativecountry1"></td><td id="publicationyear1"></td></tr>
+<tr><td id="name2"></td><td id="storytitle2"></td><td id="nativecountry2"></td><td id="publicationyear2"></td></tr></table>
+<p id="author3"></p>
+<p id="author4"></p>
+<script>
+var authors=[
+{"name":"n1","storytitle":"t1","nativecountry": "c1","publicationyear":"y1"},
+{"name":"n2","storytitle":"t2","nativecountry": "c2","publicationyear":"y2"},
+{"name":"n3","storytitle":"t3","nativecountry": "c3","publicationyear":"y3"},
+{"name":"n4","storytitle":"t4","nativecountry": "c4","publicationyear":"y4"}
+];
+var obj=authors[0];
+document.getElementById('name1').innerHTML=obj.name;
+document.getElementById('storytitle1').innerHTML=obj.storytitle;
+document.getElementById('nativecountry1').innerHTML=obj.nativecountry;
+document.getElementById('publicationyear1').innerHTML=obj.publicationyear;
+var obj=authors[1];
+document.getElementById('name2').innerHTML=obj.name;
+document.getElementById('storytitle2').innerHTML=obj.storytitle;
+document.getElementById('nativecountry2').innerHTML=obj.nativecountry;
+document.getElementById('publicationyear2').innerHTML=obj.publicationyear;var t3=authors[2];
+var t4=authors[3];
+document.getElementById("author3").innerHTML="name:\t"+t3.name+"\t\t\t\t storytitle:\t"+t3.storytitle+"nativecountry:\t"+t3.nativecountry+"publicationyear:\t"+t3.publicationyear;
+document.getElementById("author4").innerHTML="name:\t"+t4.name+"\t\t\t\t storytitle:\t"+t4.storytitle+"nativecountry:\t"+t4.nativecountry+"publicationyear:\t"+t4.publicationyear;
+</script>
+<body>
+</html>
