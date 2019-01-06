@@ -1,0 +1,31 @@
+<!DOCTYPE html>
+<html>
+<body>
+<h1> authors and their works</h1>
+<table id="authortable" >
+<th>AUTHORS</th><th>BOOKTITLE</th>
+<tr><td id="author1"></td><td id="title1"></td></tr>
+<tr><td id="author2"></td><td id="title2"></td></tr>
+</table>
+<p id="author3"></p>
+<p id="author4"></p>
+<script>
+var authors=[
+{"author":"a1","title":"t1"},
+{"author":"a2","title":"t2"},
+{"author":"a3","title":"t3"},
+{"author":"a4","title":"t4"}
+];
+var obj=authors[0];
+document.getElementById('author1').innerHTML=obj.author;
+document.getElementById('title1').innerHTML=obj.title;
+var obj=authors[1];
+document.getElementById('author2').innerHTML=obj.author;
+document.getElementById('title2').innerHTML=obj.title;
+var t3=authors[2];
+var t4=authors[3];
+document.getElementById("author3").innerHTML="author:\t\t"+t3.author+"\t\t\t\ttitle:\t\t\t"+t3.title;
+document.getElementById("author4").innerHTML="author:\t\t"+t4.author+"\t\t\t\ttitle:\t\t\t"+t4.title;
+</script>
+<body>
+</html>
